@@ -1,7 +1,6 @@
 <h1>Fábio Dominguês</h1>
 
 
-> 35 years old
 >
 > - Studying <em><strong> Systems Development. </em></strong>
 > - Lover of good <em><strong> Music </em></strong> and <em><strong> Video Games. </em></strong>
