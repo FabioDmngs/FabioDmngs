@@ -14,7 +14,7 @@ body {
 header {
   background-color: rgba(24, 123, 205, 0.8); /* Cor azul com transparência */
   color: white;
-  padding: 10px 20px;
+  
   border-radius: 2px;
   position: fixed;
   top: 0;
@@ -22,6 +22,10 @@ header {
   width: 100%;
   z-index: 1000;
   backdrop-filter: blur(8px);
+}
+
+.logo{
+  padding-left: 15px;
 }
 
 nav {
@@ -92,7 +96,7 @@ nav a:hover {
   min-height: 100vh; /* faz com que ocupe 100% da altura da tela */
   text-align: center;
   padding: 60px 40px;
-    background: linear-gradient(to bottom, #d0dff2 0%, #f0f0f0 100%);
+   background-color: #f0f0f0;
 }
 .hero3 {
   min-height: 100vh; /* faz com que ocupe 100% da altura da tela */
@@ -157,17 +161,17 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(to bottom, #d0dff2 0%, #f0f0f0 100%);
+    background-color: #f0f0f0;
 }
 
-.hero1, .hero3 {
+.hero1, .hero2 {
     flex: 1;
     min-width: 300px; /* Para mobile responsivo */
     box-sizing: border-box;
 }
 
 /* Opcional: ajuste para largura igual */
-.hero1, .hero3 {
+.hero1, .hero2 {
     max-width: 48%;
 }
 
@@ -185,12 +189,10 @@ footer {
   text-align: center;
   font-size: 14px;
   border-radius: 2px;
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
-iframe{
-  border-radius: px;
-}
+
 @media (max-width: 600px) {
   .hero h2 {
     font-size: 28px;
