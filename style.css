@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #187bcd;
+  background-color: rgba(24, 123, 205, 0.8); /* Cor azul com transparência */
   color: white;
   padding: 10px 20px;
   border-radius: 2px;
@@ -20,11 +20,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Garante que fique sobre o conteúdo */
-  background-color: #187bcd;
-  color: white;
-  padding: 10px 20px;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+nav {
   
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 header h1 {
@@ -35,7 +40,7 @@ nav {
   display: flex;
   justify-content: flex-start; /* mantém os itens em linha */
   align-items: center;
-  background-color: #187bcd;
+  
 }
 
 nav a {
@@ -81,7 +86,7 @@ nav a:hover {
   min-height: 100vh; /* faz com que ocupe 100% da altura da tela */
   text-align: center;
   padding: 60px 40px;
-  background: linear-gradient(to bottom, #d0dff2 0%, #fffcfc 100%);
+
 }
 .hero2 {
   min-height: 100vh; /* faz com que ocupe 100% da altura da tela */
@@ -93,7 +98,7 @@ nav a:hover {
   min-height: 100vh; /* faz com que ocupe 100% da altura da tela */
   text-align: center;
   padding: 60px 40px;
-    background: linear-gradient(to bottom, #d0dff2 0%, #f0f0f0 100%);
+    
 }
 
 
@@ -145,6 +150,26 @@ nav a:hover {
   margin-top: 22px;
   margin-bottom: 22px;
 }
+.hero-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #d0dff2 0%, #f0f0f0 100%);
+}
+
+.hero1, .hero3 {
+    flex: 1;
+    min-width: 300px; /* Para mobile responsivo */
+    box-sizing: border-box;
+}
+
+/* Opcional: ajuste para largura igual */
+.hero1, .hero3 {
+    max-width: 48%;
+}
 
 .fone {
   padding-right: 10px;
@@ -158,10 +183,14 @@ footer {
   background-color: #187bcd;
   color: #ccc;
   text-align: center;
-  padding: 20px;
   font-size: 14px;
+  border-radius: 2px;
+  padding: 15px 0px;
 }
 
+iframe{
+  border-radius: px;
+}
 @media (max-width: 600px) {
   .hero h2 {
     font-size: 28px;
